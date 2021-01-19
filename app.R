@@ -36,7 +36,7 @@
 #' @importFrom stats predict reorder cor acf
 #' @importFrom lubridate is.Date is.POSIXct
 #' @importFrom graphics par
-#' @author Jean Bertin, \email{jean.bertin@mines-paris.org}
+#' @author Hiba thlithi, \email{thlithihiba@gmail.com}
 #' @export
 #' 
 #' 
@@ -153,10 +153,9 @@ shinyML_regression <- function(data = data,y,framework = "h2o", share_app = FALS
     # Define footer
     argonFooter <- argonDashFooter(
         copyrights = "@shinyML, 2020",
-        src = "https://jeanbertinr.github.io/shinyMLpackage/",
+        src = "https://github.com/hybath/Shiny-machine-learning-application/",
         argonFooterMenu(
-            argonFooterItem("GitHub", src = "https://github.com/JeanBertinR/shinyML"),
-            argonFooterItem("CRAN", src = "https://cran.r-project.org/web/packages/shinyML/index.html")
+            argonFooterItem("GitHub", src = "https://github.com/hybath/Shiny-machine-learning-application/")
         )
     )
     
