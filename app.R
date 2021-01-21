@@ -13,28 +13,10 @@
 #' 
 #' @param port a four-digit number corresponding to the port the application should listen to. This parameter is necessary only  if share_app option is set to TRUE
 #' 
-#' @return NULL
-#'
-#' @examples
-#'\dontrun{
-#' library(shinyML)
+
 #' # Classical regression analysis 
 #' shinyML_regression(data = iris,y = "Petal.Width",framework = "h2o")
-#' 
-#' # Time series analysis
-#' longley2 <- longley %>% mutate(Year = as.Date(as.character(Year),format = "%Y"))
-#' shinyML_regression(data = longley2,y = "Population",framework = "h2o")
-#'}
-#' @import shiny argonDash argonR dygraphs data.table ggplot2 shinycssloaders sparklyr
-#' @importFrom dplyr %>% select mutate group_by summarise arrange rename select_if row_number sample_frac anti_join
-#' @importFrom tidyr gather everything
-#' @importFrom DT renderDT DTOutput datatable
-#' @importFrom h2o h2o.init as.h2o h2o.deeplearning h2o.varimp h2o.predict h2o.gbm h2o.glm h2o.randomForest h2o.automl h2o.clusterStatus
-#' @importFrom plotly plotlyOutput renderPlotly ggplotly plot_ly layout add_trace
-#' @importFrom shinyWidgets materialSwitch switchInput sendSweetAlert knobInput awesomeCheckbox actionBttn prettyCheckboxGroup
-#' @importFrom shinyjs useShinyjs hideElement
-#' @importFrom stats predict reorder cor acf
-#' @importFrom lubridate is.Date is.POSIXct
+
 #' @importFrom graphics par
 #' @author Hiba thlithi, \email{thlithihiba@gmail.com}
 #' @export
